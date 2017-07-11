@@ -31,6 +31,6 @@ WORD
 // Parser
 
 start
-    : EMAIL
+    : WORD
     ;
 

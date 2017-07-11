@@ -9,7 +9,7 @@ public class TestAntlr47 {
 
     @Test
     public void simpleTest(){
-        String ExperimentString = "Something/123.456";
+        String ExperimentString = "Something";
         CodePointCharStream input = CharStreams.fromString(ExperimentString);
         ExperimentLexer lexer = new ExperimentLexer(input);
 
