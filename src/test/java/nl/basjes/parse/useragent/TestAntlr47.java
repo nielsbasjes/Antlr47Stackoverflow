@@ -11,7 +11,7 @@ public class TestAntlr47 {
 @Test
     public void simpleTest(){
 
-    String userAgentString = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36";
+    String userAgentString = "Mozilla/5.0 AppleWebKit/537.36 Chrome/59.0.3071.115 Safari/537.36";
     ANTLRInputStream input = new ANTLRInputStream(userAgentString);
     UserAgentLexer lexer = new UserAgentLexer(input);
 
