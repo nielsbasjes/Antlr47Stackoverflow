@@ -9,8 +9,8 @@ public class TestAntlr47 {
 
     @Test
     public void simpleTest(){
-        String ExperimentString = "Something";
-        CodePointCharStream input = CharStreams.fromString(ExperimentString);
+        String something = "Something";
+        CodePointCharStream input = CharStreams.fromString(something);
         ExperimentLexer lexer = new ExperimentLexer(input);
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
