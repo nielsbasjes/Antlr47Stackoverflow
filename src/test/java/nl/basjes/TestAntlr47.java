@@ -1,22 +1,14 @@
 package nl.basjes;
 
-import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.CodePointCharStream;
-import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.ANTLRInputStream;
 import org.junit.Test;
 
 public class TestAntlr47 {
 
     @Test
     public void simpleTest(){
-        String something = "Something";
-        CodePointCharStream input = CharStreams.fromString(something);
+        ANTLRInputStream input = new ANTLRInputStream("Something"); // This API works in both 4.6 and 4.7
         ExperimentLexer lexer = new ExperimentLexer(input);
-
-        CommonTokenStream tokens = new CommonTokenStream(lexer);
-        ExperimentParser parser = new ExperimentParser(tokens);
-
-        parser.start();
+        lexer.getAllTokens();
     }
-
 }
